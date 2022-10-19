@@ -8,8 +8,8 @@ body{
 
 @font-face {
   font-family: 'Tw Cen MT Condensed';
-  src: url('../VS Code/Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff2') format('woff2'),
-      url('../VS Code/Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff') format('woff');
+  src: url('.Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff2') format('woff2'),
+      url('.Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@ a{
 }
 
 #header_background{
-  background-image: url("../gambar/4HtdFjn\ -\ Copy.jpg");
+  background-image: url("./gambar/4HtdFjn\ -\ Copy.jpg");
   display:flex;
   flex-direction: column;
   width: 100%;
@@ -37,7 +37,7 @@ a{
 }
 
 #logo{
-  background-image:url(../Logo\ header.png);
+  background-image:url(./Logo\ header.png);
   width: 150px;
   height: 150px;
   background-size: contain;
@@ -46,7 +46,7 @@ a{
 }
 
 #logo:hover{
-  background-image: url("../logo\ header\ hover.png");
+  background-image: url("./logo\ header\ hover.png");
 }
 
 #header_right, #header_left{
@@ -186,7 +186,7 @@ left: 0;
 }
 
 #game_overview{
-  background-image: url("../gambar/BG\ Overview.jpg");
+  background-image: url("./gambar/BG\ Overview.jpg");
   display:flex;
   align-items: center;
   flex-direction: column;
@@ -260,7 +260,7 @@ video{
 }
 
 #join{
-  background-image: url("../gambar/joinbg.png");
+  background-image: url("./gambar/joinbg.png");
   display:flex;
   justify-content: flex-end;
   align-items: center;
@@ -274,7 +274,7 @@ video{
 }
 
 #pfn{
-  background-image: url("../gambar/Kotak\ Tombol\ PFN.png");
+  background-image: url("./gambar/Kotak\ Tombol\ PFN.png");
   color: white;
   display: flex;
   justify-content: center;
@@ -311,15 +311,15 @@ video{
 
 @font-face {
   font-family: 'Leaves And Ground';
-  src: url('../VS Code/leave\ and\ ground\ woff/LeavesAndGround.woff2') format('woff2'),
-      url('../VS Code/Tw\ Cen\ Mt\ Consended\ woff/LeavesAndGround.woff') format('woff');
+  src: url('./leave\ and\ ground\ woff/LeavesAndGround.woff2') format('woff2'),
+      url('./Tw\ Cen\ Mt\ Consended\ woff/LeavesAndGround.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 #footer{
-  background-image: url("../gambar/footer\ bg.png");
+  background-image: url("./gambar/footer\ bg.png");
   display:flex;
   flex-direction: column;
   width: 100%;
@@ -335,7 +335,7 @@ video{
 }
 
 #kiri{
-  background-image: url("../gambar/logo\ baru.png");
+  background-image: url("./gambar/logo\ baru.png");
   display:flex;
   justify-content: center;
   width: 500px;
@@ -346,7 +346,7 @@ video{
 }
 
 #tengah{
-  background-image: url("../gambar/Kotak\ NSU.png");
+  background-image: url("./gambar/Kotak\ NSU.png");
   justify-content: center;
   text-align: center;
   width: 700px;
@@ -385,7 +385,7 @@ video{
 }
 
 #twitter{
-  background-image: url("../gambar/logo\ twitter.png");
+  background-image: url("./gambar/logo\ twitter.png");
   display: flex;
   width: 80px;
   height: 80px;
@@ -394,7 +394,7 @@ video{
 } 
 
 #youtube{
-  background-image: url("../gambar/logo\ YT.png");
+  background-image: url("./gambar/logo\ YT.png");
   display: flex;
   width: 90px;
   height: 90px;
@@ -403,7 +403,7 @@ video{
 }
 
 #facebook{
-  background-image: url("../gambar/logo\ FB.png");
+  background-image: url("./gambar/logo\ FB.png");
   display: flex;
   width: 80px;
   height: 80px;
@@ -412,7 +412,7 @@ video{
 }
 
 #instagram{
-  background-image: url("../gambar/logo\ IG.png");
+  background-image: url("./gambar/logo\ IG.png");
   display: flex;
   width: 90px;
   height: 90px;
@@ -494,7 +494,7 @@ video{
 
 @media only screen and (max-width: 800px){
   #header_background{
-    background-image: url("../gambar/4HtdFjn\ -\ Copy.jpg");
+    background-image: url("./gambar/4HtdFjn\ -\ Copy.jpg");
     display:flex;
     flex-direction: column;
     width: 100%;
@@ -510,7 +510,7 @@ video{
   }
   
   #logo{
-    background-image:url(../Logo\ header.png);
+    background-image:url(./Logo\ header.png);
     width: 100px;
     height: 100px;
     background-size: contain;
@@ -519,7 +519,7 @@ video{
   }
   
   #logo:hover{
-    background-image: url("../logo\ header\ hover.png");
+    background-image: url("./logo\ header\ hover.png");
   }
   
   #header_right, #header_left{
@@ -648,7 +648,7 @@ video{
   }
   
   #game_overview{
-    background-image: url("../gambar/BG\ Overview.jpg");
+    background-image: url("./gambar/BG\ Overview.jpg");
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -723,7 +723,7 @@ video{
   }
   
   #join{
-    background-image: url("../gambar/joinbg.png");
+    background-image: url("./gambar/joinbg.png");
     display:flex;
     justify-content: flex-end;
     align-items: center;
@@ -736,7 +736,7 @@ video{
   }
   
   #pfn{
-    background-image: url("../gambar/Kotak\ Tombol\ PFN.png");
+    background-image: url("./gambar/Kotak\ Tombol\ PFN.png");
     color: white;
     display: flex;
     justify-content: center;
@@ -770,7 +770,7 @@ video{
   }
   
   #footer{
-    background-image: url("../gambar/footer\ bg.png");
+    background-image: url("./gambar/footer\ bg.png");
     display:flex;
     flex-direction: column;
     width: 100%;
@@ -786,7 +786,7 @@ video{
   }
   
   #kiri{
-    background-image: url("../gambar/logo\ baru.png");
+    background-image: url("./gambar/logo\ baru.png");
     display:flex;
     justify-content: center;
     align-items: center;
@@ -799,7 +799,7 @@ video{
   }
   
   #tengah{
-    background-image: url("../gambar/Kotak\ NSU.png");
+    background-image: url("./gambar/Kotak\ NSU.png");
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -840,7 +840,7 @@ video{
   }
   
   #twitter{
-    background-image: url("../gambar/logo\ twitter.png");
+    background-image: url("./gambar/logo\ twitter.png");
     display: flex;
     width: 30px;
     height: 30px;
@@ -849,7 +849,7 @@ video{
   } 
   
   #youtube{
-    background-image: url("../gambar/logo\ YT.png");
+    background-image: url("./gambar/logo\ YT.png");
     display: flex;
     width: 30px;
     height: 30px;
@@ -858,7 +858,7 @@ video{
   }
   
   #facebook{
-    background-image: url("../gambar/logo\ FB.png");
+    background-image: url("./gambar/logo\ FB.png");
     display: flex;
     width: 30px;
     height: 30px;
@@ -867,7 +867,7 @@ video{
   }
   
   #instagram{
-    background-image: url("../gambar/logo\ IG.png");
+    background-image: url("./gambar/logo\ IG.png");
     display: flex;
     width: 30px;
     height: 30px;
