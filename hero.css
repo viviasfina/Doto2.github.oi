@@ -11,8 +11,8 @@ hr{
 
 @font-face {
   font-family: 'Tw Cen MT Condensed';
-  src: url('../VS Code/Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff2') format('woff2'),
-      url('../VS Code/Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff') format('woff');
+  src: url('./Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff2') format('woff2'),
+      url('./Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@ a{
 }
 
 #header_background{
-  background-image: url("../gambar/hero\ bg.png");
+  background-image: url("./gambar/hero\ bg.png");
   display:flex;
   flex-direction: column;
   width: 100%;
@@ -41,7 +41,7 @@ a{
 }
 
 #logo{
-  background-image:url(../Logo\ header.png);
+  background-image:url(./Logo\ header.png);
   width: 150px;
   height: 150px;
   background-size: contain;
@@ -50,7 +50,7 @@ a{
 }
 
 #logo:hover{
-  background-image: url("../logo\ header\ hover.png");
+  background-image: url("./logo\ header\ hover.png");
 }
 
 #header_right, #header_left{
@@ -205,7 +205,7 @@ left: 0;
 
 #thumbnail1{
   margin: 50px 50px;
-  background-image: url("../gambar/hero/thumbnail1.png");
+  background-image: url("./gambar/hero/thumbnail1.png");
   display: flex;
   width: 200px;
   height: 200px;
@@ -213,7 +213,7 @@ left: 0;
 }
 #thumbnail2{
   margin: 50px 50px;
-  background-image: url("../gambar/hero/thumbnail2.png");
+  background-image: url("./gambar/hero/thumbnail2.png");
   display: flex;
   width: 200px;
   height: 200px;
@@ -221,7 +221,7 @@ left: 0;
 }
 #thumbnail3{
   margin: 50px 50px;
-  background-image: url("../gambar/hero/thumbnail3.png");
+  background-image: url("./gambar/hero/thumbnail3.png");
   display: flex;
   width: 200px;
   height: 200px;
@@ -280,7 +280,7 @@ left: 0;
 }
 
 #herokanan1{
-  background-image: url("../gambar/hero/hero1.png");
+  background-image: url("./gambar/hero/hero1.png");
   display: flex;
   width: 400px;
   height:400px;
@@ -288,7 +288,7 @@ left: 0;
   margin-right: 50px;
 }
 #herokanan2{
-  background-image: url("../gambar/hero/hero2.png");
+  background-image: url("./gambar/hero/hero2.png");
   display: flex;
   width: 400px;
   height:400px;
@@ -296,7 +296,7 @@ left: 0;
   margin-right: 50px;
 }
 #herokanan3{
-  background-image: url("../gambar/hero/hero3.png");
+  background-image: url("./gambar/hero/hero3.png");
   display: flex;
   width: 400px;
   height:400px;
@@ -358,7 +358,7 @@ left: 0;
 
 @media only screen and (max-width: 800px){
   #header_background{
-    background-image: url("../gambar/hero\ bg.png");
+    background-image: url("./gambar/hero\ bg.png");
     display:flex;
     flex-direction: column;
     width: 100%;
@@ -375,7 +375,7 @@ left: 0;
   }
   
   #logo{
-    background-image:url(../Logo\ header.png);
+    background-image:url(./Logo\ header.png);
     width: 100px;
     height: 100px;
     background-size: contain;
@@ -384,7 +384,7 @@ left: 0;
   }
   
   #logo:hover{
-    background-image: url("../logo\ header\ hover.png");
+    background-image: url("./logo\ header\ hover.png");
   }
   
   #header_right, #header_left{
@@ -527,7 +527,7 @@ left: 0;
   
   #thumbnail1{
     margin: 25px 25px;
-    background-image: url("../gambar/hero/thumbnail1.png");
+    background-image: url("./gambar/hero/thumbnail1.png");
     display: flex;
     width: 50px;
     height: 50px;
@@ -535,7 +535,7 @@ left: 0;
   }
   #thumbnail2{
     margin: 25px 25px;
-    background-image: url("../gambar/hero/thumbnail2.png");
+    background-image: url("./gambar/hero/thumbnail2.png");
     display: flex;
     width: 50px;
     height: 50px;
@@ -543,7 +543,7 @@ left: 0;
   }
   #thumbnail3{
     margin: 25px 25px;
-    background-image: url("../gambar/hero/thumbnail3.png");
+    background-image: url("./gambar/hero/thumbnail3.png");
     display: flex;
     width: 50px;
     height: 50px;
@@ -602,7 +602,7 @@ left: 0;
   }
   
   #herokanan1{
-    background-image: url("../gambar/hero/hero1.png");
+    background-image: url("./gambar/hero/hero1.png");
     display: flex;
     width: 200px;
     height: 200px;
@@ -611,7 +611,7 @@ left: 0;
     margin-top: 50px;
   }
   #herokanan2{
-    background-image: url("../gambar/hero/hero2.png");
+    background-image: url("./gambar/hero/hero2.png");
     display: flex;
     width: 200px;
     height:200px;
@@ -620,7 +620,7 @@ left: 0;
     margin-top: 50px;
   }
   #herokanan3{
-    background-image: url("../gambar/hero/hero3.png");
+    background-image: url("./gambar/hero/hero3.png");
     display: flex;
     width: 200px;
     height:200px;
