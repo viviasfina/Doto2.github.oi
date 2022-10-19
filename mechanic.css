@@ -14,7 +14,7 @@
   }
   
   #header_background{
-    background-image: url("../gambar/hero\ bg.png");
+    background-image: url("./gambar/hero\ bg.png");
     display:flex;
     flex-direction: column;
     width: 100%;
@@ -32,7 +32,7 @@
   }
   
   #logo{
-    background-image:url(../Logo\ header.png);
+    background-image:url(./Logo\ header.png);
     width: 150px;
     height: 150px;
     background-size: contain;
@@ -41,7 +41,7 @@
   }
   
   #logo:hover{
-    background-image: url("../logo\ header\ hover.png");
+    background-image: url("./logo\ header\ hover.png");
   }
   
   #header_right, #header_left{
@@ -343,7 +343,7 @@
     }
   
     #logo{
-      background-image:url(../Logo\ header.png);
+      background-image:url(./Logo\ header.png);
       width: 100px;
       height: 100px;
       background-size: contain;
@@ -354,7 +354,7 @@
     }
   
     #logo:hover{
-      background-image: url("../logo\ header\ hover.png");
+      background-image: url("./logo\ header\ hover.png");
     }
   
     #header_right, #header_left{
