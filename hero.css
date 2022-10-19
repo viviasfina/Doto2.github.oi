@@ -1,0 +1,683 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  overflow-x: hidden;
+}
+hr{
+  width: 0.1px;
+}
+
+@font-face {
+  font-family: 'Tw Cen MT Condensed';
+  src: url('../VS Code/Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff2') format('woff2'),
+      url('../VS Code/Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#header_background{
+  background-image: url("../gambar/hero\ bg.png");
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo{
+  background-image:url(../Logo\ header.png);
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0px 30px;
+}
+
+#logo:hover{
+  background-image: url("../logo\ header\ hover.png");
+}
+
+#header_right, #header_left{
+  display: flex;
+  flex-direction: row;
+}
+
+.merch{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 25px 30px;
+  font-family:'Albertus Nova';
+  font-weight: normal;
+}
+#game {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 25px 30px;
+  font-family:'Albertus Nova';
+  font-weight: normal;
+  padding-left: -20px;
+  padding-right: 5px;
+}
+
+.merch:after{
+  bottom: -15px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: relative;
+  background:#ff4655 ;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.merch:hover:after { 
+width: 100%; 
+left: 0; 
+}
+
+#game:after{
+  bottom: -15px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: relative;
+  background:#ff4655 ;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+#game:hover:after { 
+width: 100%; 
+left: 0; 
+}
+
+@media screen and (max-height: 300px) {
+  .merch{
+    margin-top: 40px;
+  }
+  #game{
+    margin-top: 40px;
+  }
+}
+
+#gabut{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+#gabutdropdown{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 7.5vw;
+  height: 10vh;
+}
+
+#gabutdown{
+  background-color: black;
+  display: none;
+  min-width: 80px;
+  top: 52px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+  z-index: 1;
+  overflow-x: auto;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.menu-dropdown-item{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  width: 6vw;
+  background-color: black;
+  padding: 12px 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Albertus Nova';
+}
+
+.menu-dropdown-item:hover{
+  background-color:grey;
+  opacity: 75%;
+  color: white;
+}
+
+#gabutdropdown:hover #gabutdown{
+  display: block;
+  animation: dropdown 200ms ease-in-out;
+  transform-origin: top center;
+}
+
+
+#petik{
+  font-size: 50px;
+  color: white;
+  margin-top: 23px;
+  margin-left: -25px;
+}
+
+#title{
+  font-size: 50px;
+  color: white;
+  font-family: 'Albertus Nova';
+  display: flex;
+  justify-content: center;
+}
+#title_text{
+  font-size: 20px;
+  color: white;
+  font-family: 'Calibri';
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#thumbnail{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#thumbnail1{
+  margin: 50px 50px;
+  background-image: url("../gambar/hero/thumbnail1.png");
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+#thumbnail2{
+  margin: 50px 50px;
+  background-image: url("../gambar/hero/thumbnail2.png");
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+#thumbnail3{
+  margin: 50px 50px;
+  background-image: url("../gambar/hero/thumbnail3.png");
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+
+.herokiri{
+  margin-left: 50px;
+}
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 250px 0px;
+}
+.namahero{
+  color: white;
+  font-family: 'Albertus Nova';
+  font-size: 50px;
+}
+
+.skill{
+  color: #6c909e;
+  font-family: 'Albertus Nova';
+  font-size: 20px;
+}
+
+.deschero{
+  color: white;
+  font-family: 'Tw Cen MT Condensed';
+  font-size: 25px;
+}
+
+.type{
+  color:gray;
+  font-family: 'Albertus Nova';
+  font-size: 15px;
+}
+
+.typee{
+  color: white;
+  font-family: 'Albertus Nova';
+  font-size: 15px;
+}
+
+.back{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  background-color: turquoise;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#herokanan1{
+  background-image: url("../gambar/hero/hero1.png");
+  display: flex;
+  width: 400px;
+  height:400px;
+  background-size: cover;
+  margin-right: 50px;
+}
+#herokanan2{
+  background-image: url("../gambar/hero/hero2.png");
+  display: flex;
+  width: 400px;
+  height:400px;
+  background-size: cover;
+  margin-right: 50px;
+}
+#herokanan3{
+  background-image: url("../gambar/hero/hero3.png");
+  display: flex;
+  width: 400px;
+  height:400px;
+  background-size: cover;
+  margin-right: 50px;
+}
+
+#footerbawah{
+  display:flex;
+  flex-direction: row;
+  margin-left: 60px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#bawahkiri{
+  color: white;
+  font-family: 'Arial';
+  font-size: 20px;
+}
+
+#bawahkanan{
+  color: white;
+  font-family: 'Calibri';
+  font-size: 50px;
+  margin-left: 50px;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#whatsapp{
+  width: 90px;
+  height: 60px;
+  margin-top:5px ;
+  margin-left: 30px;
+}
+
+#nomor{
+  margin-top: 10px;
+  color: white;
+  font-family: 'Albertus Nova';
+  font-size: 30px;
+}
+
+#email2{
+  width: 60px;
+  height: 60px;
+  margin-top:5px ;
+  margin-left: 35px;
+  margin-right: 10px;
+}
+#emailbawah{
+  margin-top: 10px;
+  color: white;
+  font-family: 'Albertus Nova';
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 800px){
+  #header_background{
+    background-image: url("../gambar/hero\ bg.png");
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #logo{
+    background-image:url(../Logo\ header.png);
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 30px;
+  }
+  
+  #logo:hover{
+    background-image: url("../logo\ header\ hover.png");
+  }
+  
+  #header_right, #header_left{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .merch{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 10px 15px;
+    font-family:'Albertus Nova';
+    font-weight: normal;
+  }
+  #game {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 10px 15px;
+    font-family:'Albertus Nova';
+    font-weight: normal;
+    padding-right: 25px;
+  }
+  
+  .merch:after{
+    bottom: -15px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: relative;
+    background:#ff4655 ;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .merch:hover:after { 
+  width: 100%; 
+  left: 0; 
+  }
+  
+  #game:after{
+    bottom: -15px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: relative;
+    background:#ff4655 ;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  #game:hover:after { 
+  width: 100%; 
+  left: 0; 
+  }
+  
+  #gabut{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  
+  #gabutdropdown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 7.5vw;
+    height: 10vh;
+  }
+  
+  #gabutdown{
+    background-color: black;
+    display: none;
+    min-width: 80px;
+    top: 52px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+    z-index: 1;
+    overflow-x: auto;
+    position: absolute;
+    margin-top: 20px;
+  }
+  
+  .menu-dropdown-item{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 6vw;
+    background-color: black;
+    padding: 12px 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Albertus Nova';
+  }
+  
+  .menu-dropdown-item:hover{
+    background-color:grey;
+    opacity: 75%;
+    color: white;
+  }
+  
+  #gabutdropdown:hover #gabutdown{
+    display: block;
+    animation: dropdown 200ms ease-in-out;
+    transform-origin: top center;
+  }
+  
+  
+  #petik{
+    font-size: 1px;
+    color: white;
+  }
+  
+  #title{
+    font-size: 25px;
+    color: white;
+    font-family: 'Albertus Nova';
+    display: flex;
+    justify-content: center;
+  }
+  #title_text{
+    font-size: 15px;
+    color: white;
+    font-family: 'Calibri';
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #thumbnail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
+  #thumbnail1{
+    margin: 25px 25px;
+    background-image: url("../gambar/hero/thumbnail1.png");
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
+  #thumbnail2{
+    margin: 25px 25px;
+    background-image: url("../gambar/hero/thumbnail2.png");
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
+  #thumbnail3{
+    margin: 25px 25px;
+    background-image: url("../gambar/hero/thumbnail3.png");
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
+  
+  .herokiri{
+    margin-left: 50px;
+  }
+  
+  .hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 250px 0px;
+  }
+  .namahero{
+    color: white;
+    font-family: 'Albertus Nova';
+    font-size: 25px;
+  }
+  
+  .skill{
+    color: #6c909e;
+    font-family: 'Albertus Nova';
+    font-size: 10px;
+  }
+  
+  .deschero{
+    color: white;
+    font-family: 'Tw Cen MT Condensed';
+    font-size: 12px;
+  }
+  
+  .type{
+    color:gray;
+    font-family: 'Albertus Nova';
+    font-size: 10px;
+  }
+  
+  .typee{
+    color: white;
+    font-family: 'Albertus Nova';
+    font-size: 10px;
+  }
+  
+  .back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 25px;
+    background-color: turquoise;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  #herokanan1{
+    background-image: url("../gambar/hero/hero1.png");
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+  #herokanan2{
+    background-image: url("../gambar/hero/hero2.png");
+    display: flex;
+    width: 200px;
+    height:200px;
+    background-size: cover;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+  #herokanan3{
+    background-image: url("../gambar/hero/hero3.png");
+    display: flex;
+    width: 200px;
+    height:200px;
+    background-size: cover;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding-right: 30px;
+  }
+  
+  #footerbawah{
+    display:flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  
+  #bawahkiri{
+    color: white;
+    font-family: 'Arial';
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  #bawahkanan{
+    color: white;
+    font-family: 'Calibri';
+    font-size: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-right: 80px;
+  }
+  
+  #whatsapp{
+    width: 45px;
+    height: 30px;
+  }
+  
+  #nomor{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Albertus Nova';
+    font-size: 15px;
+  }
+  
+  #email2{
+    width: 30px;
+    height: 30px;
+  }
+  #emailbawah{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Albertus Nova';
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Leaves And Ground';
+    src: url('LeavesAndGround.woff2') format('woff2'),
+        url('LeavesAndGround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

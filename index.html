@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOTO 2</title>
+  <link rel="stylesheet" href="hompage.css">
+  <link rel="preload" href="AlbertusNova.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="TwCenMT-Condensed.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="MicrosoftTaiLe.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="leave and ground woff/LeavesAndGround.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="subs.js"></script>
+  <script src="JQuery.js"></script>
+</head>
+<body>
+  <header>
+    <div id="header_background">
+      <div id="container">
+        <div id="header_left">
+          <a href="index.html"><div id="logo"></div></a>
+
+          <div id="gabutdropdown">
+            <div id="gabut">
+              <div id="game">GAME</div>
+              <div id="petik">ˇ</div>
+            </div>
+            <div id="gabutdown">
+              <div class="menu-dropdown-item"><a href="hero.html">Hero</a></div>
+              <div class="menu-dropdown-item"><a href="Mechanic.html">Mechanics</a></div>
+            </div>
+          </div>
+
+          <a href="merchandise.html" class="merch">MERCH</a>
+        </div>
+
+        <div id="header_right">
+          <a href="register.html" class="merch">REGISTER</a>
+        </div>
+      </div>
+        
+      <div id="header_text">
+        <br>
+        “Death and I, we have
+        <br>
+        an understanding”
+        <br>
+        — Abbadon
+      </div>
+    </div>
+</header>
+
+  <div id="game_overview">
+
+    <div id="overview_text">
+      ~ GAME OVERVIEW ~
+    </div>
+    <div id="slider">
+      <div id="container_slide">
+        <video controls autoplay loop muted>
+        <source src="../gambar/movie480_Trim.mp4" type="video/mp4"> 
+        </video>
+        <img src="../gambar/overview 1.jpg" alt="">
+        <img src="../gambar/overview 2.jpg" alt="">
+        <img src="../gambar/overview 3.jpg" alt="">
+        <img src="../gambar/overview 4.jpg" alt="">
+        <img src="../gambar/overview 5.jpg" alt="">
+      </div>
+    </div>
+    <br>
+    <div id="geser">
+      <button id="prev"><</button>
+      <button id ="satu">.</button>
+      <button id ="dua">.</button>
+      <button id ="tiga">.</button>
+      <button id ="empat">.</button>
+      <button id ="lima">.</button>
+      <button id ="enam">.</button>
+      <button id ="next">></button>
+      <br>
+    </div>
+    <script src="../VS code/script.js"></script>
+    <br><br>
+    <div id="description">
+      Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay,features, and heroes, Dota 2 has taken on a life of its own.
+    </div>
+  </div>
+  
+
+  <div id="join">
+    <div id="pfn">
+     <a href="https://store.steampowered.com/app/570/Dota_2/">PLAY FREE NOW</a> 
+    </div>
+    <div id="join_text">
+      <div id="atas">
+        JOIN THE
+      </div>
+      
+      <div id="bawah">
+        BATTLE OF THE ANCIENTS
+      </div>
+      
+    </div>
+  </div>
+
+  <div id="footer">
+    <div id="footeratas">
+
+      <div id="kiri">
+      </div>
+
+      <div id="tengah">
+        <div id="news">
+          NEWSLETTER SIGN-UP
+        </div> 
+        <div id="subs">
+          Subscribe to get our lastest offer!
+        </div>
+        <div id="box_email">
+          <form action="index.html" method="POST">
+            <input type="email" name="email" id="email" placeholder="Email Address" required><br><br><br>
+            <button onclick="validate()" id="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="kanan">
+        
+        <a href="https://twitter.com/DOTA2?s=20"><div id="twitter"></div></a>   
+        <a href="https://www.youtube.com/user/dota2"><div id="youtube"></div></a>     
+        <a href="https://www.instagram.com/dota2/"><div id="instagram"></div></a>  
+        <a href="https://www.facebook.com/dota2"><div id="facebook"></div></a>
+        
+      </div>
+    </div>
+    
+    <div id="footerbawah">
+      <div id="bawahkiri">
+        Copyright ©2021 Doto Everland <br>
+        Terms of Use | Privacy Policy
+      </div>
+      <div id="bawahkanan">
+        | Contact Us
+        <div>
+          <img src="../gambar/phone2.png" alt="" id="whatsapp"> 
+        </div>
+        <div id="nomor">
+          +6285712123412
+        </div> 
+        <div>
+          <img src="../gambar/email2.png" alt="" id="email2"> 
+        </div>
+        <div id="emailbawah">
+          doto.everland@yahoo.com
+        </div> 
+        
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(function(){
+      let headertext = $('#header_text')
+      let desc = $('#description')
+      headertext.fadeOut(1)
+      headertext.fadeIn(2500)
+
+    })
+  </script>
+</body>
+</html>

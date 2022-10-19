@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Tw Cen MT Condensed';
+    src: url('TwCenMT-Condensed.woff2') format('woff2'),
+        url('TwCenMT-Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

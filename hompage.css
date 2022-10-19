@@ -1,0 +1,951 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Tw Cen MT Condensed';
+  src: url('../VS Code/Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff2') format('woff2'),
+      url('../VS Code/Tw\ Cen\ Mt\ Consended\ woff/TwCenMT-Condensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#header_background{
+  background-image: url("../gambar/4HtdFjn\ -\ Copy.jpg");
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo{
+  background-image:url(../Logo\ header.png);
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0px 30px;
+}
+
+#logo:hover{
+  background-image: url("../logo\ header\ hover.png");
+}
+
+#header_right, #header_left{
+  display: flex;
+  flex-direction: row;
+}
+
+.merch{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 25px 30px;
+  font-family:'Albertus Nova';
+  font-weight: normal;
+}
+#game {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 25px 30px;
+  font-family:'Albertus Nova';
+  font-weight: normal;
+  padding-left: -20px;
+  padding-right: 5px;
+}
+
+.merch:after{
+  bottom: -15px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: relative;
+  background:#ff4655 ;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.merch:hover:after { 
+width: 100%; 
+left: 0; 
+}
+
+#game:after{
+  bottom: -15px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: relative;
+  background:#ff4655 ;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+#game:hover:after { 
+width: 100%; 
+left: 0; 
+}
+
+@media screen and (max-height: 300px) {
+  .merch{
+    margin-top: 40px;
+  }
+  #game{
+    margin-top: 40px;
+  }
+}
+
+#gabut{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+#gabutdropdown{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 7.5vw;
+  height: 10vh;
+}
+
+#gabutdown{
+  background-color: black;
+  display: none;
+  min-width: 80px;
+  top: 52px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+  z-index: 1;
+  overflow-x: auto;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.menu-dropdown-item{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  width: 6vw;
+  background-color: black;
+  padding: 12px 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Albertus Nova';
+}
+
+.menu-dropdown-item:hover{
+  background-color:grey;
+  opacity: 75%;
+  color: white;
+}
+
+#gabutdropdown:hover #gabutdown{
+  display: block;
+  animation: dropdown 200ms ease-in-out;
+  transform-origin: top center;
+}
+
+
+#petik{
+  font-size: 50px;
+  color: white;
+  margin-top: 23px;
+  margin-left: -25px;
+}
+
+#header_text{
+  text-align: right;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Albertus Nova';
+  margin-right: 30px;
+  margin-bottom: 80px;
+}
+
+#game_overview{
+  background-image: url("../gambar/BG\ Overview.jpg");
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#overview_text{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 25px;
+  font-family: 'Albertus Nova';
+  color: #5a0c24;
+}
+
+#slider{
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+}
+
+#geser{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#container_slide{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  transition: 1s;
+}
+
+img{
+  width: 1280px;
+  height: 720px;
+}
+video{
+  width: 1280px;
+  height: 720px;
+}
+
+#next,#satu,#dua,#tiga,#empat,#lima,#enam,#prev{
+  display: flex;
+  justify-content: center;
+  background-color:black;
+  color:white;
+  width: 5%;
+  font-family: 'Consolas';
+  font-size: 25px;
+  border:wheat;
+  border-radius: 5px;
+  padding: 10px 20px
+
+}
+
+#description{
+  color: white;
+  font-size: 48px;
+  font-family: 'Tw Cen MT Condensed';
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  text-align-last: center;
+  margin: 0px 250px;
+  padding-bottom: 20px;
+}
+
+#join{
+  background-image: url("../gambar/joinbg.png");
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+#pfn{
+  background-image: url("../gambar/Kotak\ Tombol\ PFN.png");
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  height: 75px;
+  font-size: 35px;
+  font-family: 'Albertus Nova';
+  background-size:cover;
+  padding-bottom: 15px;
+}
+
+
+#join_text{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 85px;
+  font-family: 'Albertus Nova';
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+#atas{
+  color: grey;
+}
+#bawah{
+  color: white;
+}
+
+
+
+@font-face {
+  font-family: 'Leaves And Ground';
+  src: url('../VS Code/leave\ and\ ground\ woff/LeavesAndGround.woff2') format('woff2'),
+      url('../VS Code/Tw\ Cen\ Mt\ Consended\ woff/LeavesAndGround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#footer{
+  background-image: url("../gambar/footer\ bg.png");
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#footeratas{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#kiri{
+  background-image: url("../gambar/logo\ baru.png");
+  display:flex;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 60px;
+}
+
+#tengah{
+  background-image: url("../gambar/Kotak\ NSU.png");
+  justify-content: center;
+  text-align: center;
+  width: 700px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin-top: 80px;
+  padding-top: 15px;
+  flex-direction: column;
+}
+
+#news{
+  color: #d5a77a;
+  font-size: 80px;
+  font-family: 'Leaves And Ground';
+}
+
+#subs{
+  color: white;
+  font-size: 30px;
+  font-family: 'Arial';
+  padding-top: 10px;
+}
+
+#kanan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 60px;
+  margin-right: 40px;
+}
+
+#twitter{
+  background-image: url("../gambar/logo\ twitter.png");
+  display: flex;
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  margin: 20px;
+} 
+
+#youtube{
+  background-image: url("../gambar/logo\ YT.png");
+  display: flex;
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  margin: 20px;
+}
+
+#facebook{
+  background-image: url("../gambar/logo\ FB.png");
+  display: flex;
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  margin: 20px;
+}
+
+#instagram{
+  background-image: url("../gambar/logo\ IG.png");
+  display: flex;
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  margin: 20px;
+}
+
+#box_email{
+  margin: 50px;
+}
+
+#email{
+  width: 360px;
+  height: 70px;
+  color: black;
+  font-size: 30px;
+}
+
+#submit{
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  font-family: 'Lucida Console';
+  background-color: #775009;
+  border-style: unset;
+}
+
+#footerbawah{
+  display:flex;
+  flex-direction: row;
+  margin-left: 60px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#bawahkiri{
+  color: white;
+  font-family: 'Arial';
+  font-size: 20px;
+}
+
+#bawahkanan{
+  color: white;
+  font-family: 'Calibri';
+  font-size: 50px;
+  margin-left: 50px;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#whatsapp{
+  width: 90px;
+  height: 60px;
+  margin-top:5px ;
+  margin-left: 30px;
+}
+
+#nomor{
+  margin-top: 10px;
+  color: white;
+  font-family: 'Albertus Nova';
+  font-size: 30px;
+}
+
+#email2{
+  width: 60px;
+  height: 60px;
+  margin-top:5px ;
+  margin-left: 35px;
+  margin-right: 10px;
+}
+#emailbawah{
+  margin-top: 10px;
+  color: white;
+  font-family: 'Albertus Nova';
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 800px){
+  #header_background{
+    background-image: url("../gambar/4HtdFjn\ -\ Copy.jpg");
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #logo{
+    background-image:url(../Logo\ header.png);
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px;
+  }
+  
+  #logo:hover{
+    background-image: url("../logo\ header\ hover.png");
+  }
+  
+  #header_right, #header_left{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .merch{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 15px 25px;
+    font-family:'Albertus Nova';
+    font-weight: normal;
+  }
+  #game {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 15px 15px;
+    font-family:'Albertus Nova';
+    font-weight: normal;
+    padding-left: -20px;
+    padding-right: 20px;
+  }
+  
+  .merch:after{
+    bottom: -15px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: relative;
+    background:#ff4655 ;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .merch:hover:after { 
+  width: 100%; 
+  left: 0; 
+  }
+  
+  #game:after{
+    bottom: -15px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: relative;
+    background:#ff4655 ;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  #game:hover:after { 
+  width: 100%; 
+  left: 0; 
+  }
+  
+  #gabut{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  
+  #gabutdropdown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 7.5vw;
+    height: 10vh;
+  }
+  
+  #gabutdown{
+    background-color: black;
+    display: none;
+    min-width: 80px;
+    top: 52px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+    z-index: 1;
+    overflow-x: auto;
+    position: absolute;
+    margin-top: 20px;
+  }
+  
+  .menu-dropdown-item{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 6vw;
+    background-color: black;
+    padding: 12px 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Albertus Nova';
+  }
+  
+  .menu-dropdown-item:hover{
+    background-color:grey;
+    opacity: 75%;
+    color: white;
+  }
+  
+  #gabutdropdown:hover #gabutdown{
+    display: block;
+    animation: dropdown 200ms ease-in-out;
+    transform-origin: top center;
+  }
+  
+  
+  #petik{
+    font-size: 1px;
+    color: white;
+  }
+  
+  #header_text{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Albertus Nova';
+    margin-right: 30px;
+    margin-bottom: 80px;
+  }
+  
+  #game_overview{
+    background-image: url("../gambar/BG\ Overview.jpg");
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #overview_text{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: 'Albertus Nova';
+    color: #5a0c24;
+  }
+  
+  #slider{
+    width: 240px;
+    height: 150px;
+    overflow: hidden;
+  }
+  
+  #geser{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #container_slide{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: 1s;
+  }
+  
+  img{
+    width: 240px;
+    height: 150px;
+  }
+  video{
+    width: 240px;
+    height: 150px;
+  }
+  
+  #next,#satu,#dua,#tiga,#empat,#lima,#enam,#prev{
+    display: flex;
+    justify-content: center;
+    background-color:black;
+    color:white;
+    width: 5%;
+    font-family: 'Consolas';
+    font-size: 5px;
+    border:wheat;
+    border-radius: 5px;
+    padding: 5px 10px
+  
+  }
+  
+  #description{
+    color: white;
+    font-size: 10px;
+    font-family: 'Tw Cen MT Condensed';
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    text-align-last: center;
+    margin: 0px 40px;
+    padding-bottom: 20px;
+  }
+  
+  #join{
+    background-image: url("../gambar/joinbg.png");
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+  }
+  
+  #pfn{
+    background-image: url("../gambar/Kotak\ Tombol\ PFN.png");
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    font-size: 12px;
+    font-family: 'Albertus Nova';
+    background-size:cover;
+    padding-bottom: 5px;
+  }
+  
+  
+  #join_text{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Albertus Nova';
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+  }
+  
+  #atas{
+    color: grey;
+  }
+  #bawah{
+    color: white;
+  }
+  
+  #footer{
+    background-image: url("../gambar/footer\ bg.png");
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #footeratas{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #kiri{
+    background-image: url("../gambar/logo\ baru.png");
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+  
+  #tengah{
+    background-image: url("../gambar/Kotak\ NSU.png");
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin-top: 80px;
+    padding-top: 15px;
+    flex-direction: column;
+    margin-left: 60px;
+  }
+  
+  #news{
+    color: #d5a77a;
+    font-size: 30px;
+    font-family: 'Leaves And Ground';
+  }
+  
+  #subs{
+    color: white;
+    font-size: 10px;
+    font-family: 'Arial';
+    padding-top: 10px;
+  }
+  
+  #kanan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 130px;
+  }
+  
+  #twitter{
+    background-image: url("../gambar/logo\ twitter.png");
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin: 10px;
+  } 
+  
+  #youtube{
+    background-image: url("../gambar/logo\ YT.png");
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin: 10px;
+  }
+  
+  #facebook{
+    background-image: url("../gambar/logo\ FB.png");
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin: 10px;
+  }
+  
+  #instagram{
+    background-image: url("../gambar/logo\ IG.png");
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin: 10px;
+  }
+  
+  #box_email{
+    margin-top: 10px;
+  }
+  
+  #email{
+    width: 130px;
+    height: 25px;
+    color: black;
+    font-size: 10px;
+  }
+  
+  #submit{
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+    font-family: 'Lucida Console';
+    background-color: #775009;
+    border-style: unset;
+  }
+  
+  #footerbawah{
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #bawahkiri{
+    color: white;
+    font-family: 'Arial';
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: -60px;
+  }
+  
+  #bawahkanan{
+    color: white;
+    font-family: 'Calibri';
+    font-size: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-right: 120px;
+  }
+  
+  #whatsapp{
+    width: 45px;
+    height: 30px;
+    padding-right: 30px;
+  }
+  
+  #nomor{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Albertus Nova';
+    font-size: 15px;
+  }
+  
+  #email2{
+    width: 30px;
+    height: 30px;
+    padding-right: 30px;
+  }
+  #emailbawah{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Albertus Nova';
+    font-size: 15px;
+  }
+}

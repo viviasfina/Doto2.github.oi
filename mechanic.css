@@ -1,0 +1,650 @@
+  *{
+    margin: 0px;
+    overflow-x: hidden;
+    
+  }
+  
+  body{
+    overflow-y: hidden;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  #header_background{
+    background-image: url("../gambar/hero\ bg.png");
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+  }
+  
+  #logo{
+    background-image:url(../Logo\ header.png);
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 30px;
+  }
+  
+  #logo:hover{
+    background-image: url("../logo\ header\ hover.png");
+  }
+  
+  #header_right, #header_left{
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+  .merch{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 25px 30px;
+    font-family:'Albertus Nova';
+    font-weight: normal;
+  }
+  #game {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 25px 30px;
+    font-family:'Albertus Nova';
+    font-weight: normal;
+    padding-left: -20px;
+    padding-right: 5px;
+  }
+  
+  .merch:after{
+    bottom: -15px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: relative;
+    background:#ff4655 ;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .merch:hover:after { 
+  width: 100%; 
+  left: 0; 
+  }
+  
+  #game:after{
+    bottom: -15px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: relative;
+    background:#ff4655 ;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  #game:hover:after { 
+  width: 100%; 
+  left: 0; 
+  }
+  
+  #gabut{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    
+  }
+  
+  #gabutdropdown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 7.5vw;
+    height: 10vh;
+    overflow-y: hidden;
+  }
+  
+  #gabutdown{
+    background-color: black;
+    display: none;
+    min-width: 80px;
+    top: 52px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+    z-index: 1;
+    overflow-x: auto;
+    position: absolute;
+    margin-top: 20px;
+  }
+  
+  .menu-dropdown-item{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 6vw;
+    background-color: black;
+    padding: 12px 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Albertus Nova';
+  }
+  
+  .menu-dropdown-item:hover{
+    background-color:grey;
+    opacity: 75%;
+    color: white;
+  }
+  
+  #gabutdropdown:hover #gabutdown{
+    display: block;
+    animation: dropdown 200ms ease-in-out;
+    transform-origin: top center;
+  }
+  
+  
+  #petik{
+    font-size: 50px;
+    color: white;
+    margin-top: 23px;
+    margin-left: -25px;
+  }
+
+#middle{
+    padding: 30px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0b0a18;
+}
+
+#bagian1{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+}
+
+#bagian2{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+}
+
+.subjudul{
+    justify-self: left;
+    font-size: 50px;
+    height: 100px;
+    text-decoration: bold;
+    text-decoration: underline;
+    color: white;
+    overflow-y: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#bagian3{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+}
+
+.katakata{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    display: flex;
+    align-items: center;
+}
+
+#katakata1{
+    height: 300px;
+}
+
+#katakata2, #katakata3{
+    height: 150px;
+}
+
+#kiri1{
+    color: white;
+    text-align: justify;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#kanan1{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    /* overflow: hidden; */
+}
+
+#kiri2{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    /* overflow: hidden; */
+}
+
+#kanan2{
+    color: white;
+    text-align: justify;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+#kiri3{
+    color: white;
+    text-align: justify;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#kanan3{
+    display: flex;
+    width: 500px;
+    height: 300px;
+    /* overflow: hidden; */
+}
+
+#footerbawah{
+    display:flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  
+  #bawahkiri{
+    color: white;
+    font-family: 'Arial';
+    font-size: 20px;
+  }
+  
+  #bawahkanan{
+    color: white;
+    font-family: 'Calibri';
+    font-size: 50px;
+    margin-left: 50px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #whatsapp{
+    width: 90px;
+    height: 60px;
+    margin-top:5px ;
+    margin-left: 30px;
+  }
+  
+  #nomor{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Albertus Nova';
+    font-size: 30px;
+  }
+  
+  #email2{
+    width: 60px;
+    height: 60px;
+    margin-top:5px ;
+    margin-left: 35px;
+    margin-right: 10px;
+  }
+  #emailbawah{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Albertus Nova';
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    #header_background{
+      display:flex;
+      flex-direction: column;
+      width: 200px;
+      height: 100px;
+      position: relative;
+    }
+    
+    #container{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    #logo{
+      background-image:url(../Logo\ header.png);
+      width: 100px;
+      height: 100px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: 0px;
+      margin-left:10px ;
+      margin-right: 25px;
+    }
+  
+    #logo:hover{
+      background-image: url("../logo\ header\ hover.png");
+    }
+  
+    #header_right, #header_left{
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .merch{
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      margin: 15px;
+      margin-left: 30px;
+      font-family:'Albertus Nova';
+      font-weight: normal;
+    }
+    #game {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      margin: 15px;
+      margin-right: 10px;
+      font-family:'Albertus Nova';
+      font-weight: normal;
+      padding-left: -20px;
+      padding-right: 20px;
+    }
+  
+    .merch:after{
+      bottom: -15px;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 50%;
+      position: relative;
+      background:#ff4655 ;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+  
+    .merch:hover:after { 
+    width: 100%; 
+    left: 0; 
+    }
+  
+    #game:after{
+      bottom: -15px;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 50%;
+      position: relative;
+      background:#ff4655 ;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+  
+    #game:hover:after { 
+    width: 100%; 
+    left: 0; 
+    }
+  
+    #gabut{
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+    }
+  
+    #gabutdropdown{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 7.5vw;
+      height: 10vh;
+    }
+  
+    #gabutdown{
+      background-color: black;
+      display: none;
+      min-width: 80px;
+      top: 52px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+      z-index: 1;
+      overflow-x: auto;
+      position: absolute;
+      margin-top: 20px;
+    }
+  
+    .menu-dropdown-item{
+      color: white;
+      font-size: 15px;
+      text-align: center;
+      width: 6vw;
+      background-color: black;
+      padding: 12px 10px;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      font-family: 'Albertus Nova';
+    }
+  
+    .menu-dropdown-item:hover{
+      background-color:grey;
+      opacity: 75%;
+      color: white;
+    }
+  
+    #gabutdropdown:hover #gabutdown{
+      display: block;
+      animation: dropdown 200ms ease-in-out;
+      transform-origin: top center;
+    }
+  
+    #petik{
+      font-size: 20px;
+      color: white;
+      margin-right: 10px;
+    }
+    
+    #middle{
+        /* padding: 30px; */
+        padding: 0px;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #0b0a18;
+    }
+    
+    #bagian1{
+        margin-top: 10px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    #bagian2{
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    #bagian3{
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .subjudul{
+        justify-self: left;
+        font-size: 20px;
+        height: 50px;
+        text-decoration: bold;
+        text-decoration: underline;
+        color: white;
+        overflow-y: hidden;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .katakata{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 5pt;
+        display: flex;
+        align-items: center;
+    }
+    
+    #katakata1{
+        height: 300px;
+    }
+    
+    #katakata2, #katakata3{
+        height: 100px
+    }
+    
+    #kiri1{
+        color: white;
+        text-align: justify;
+        width: 200px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    #kanan1{
+        display: flex;
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+        align-items: center;
+        /* margin-right: 50px; */
+        /* overflow: hidden; */
+    }
+    
+    #kiri2{
+        display: flex;
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        /* overflow: hidden; */
+    }
+    
+    #kanan2{
+        color: white;
+        text-align: justify;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        /* margin-right: 50px; */
+    }
+    
+    #kiri3{
+        color: white;
+        text-align: justify;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    #kanan3{
+        display: flex;
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        /* margin-right: 50pt; */
+        /* overflow: hidden; */
+    }
+    
+    #footerbawah{
+      display:flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+  
+    #bawahkiri{
+      color: white;
+      font-family: 'Arial';
+      font-size: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      align-content: center;
+      margin-left: 0px;
+    }
+  
+    #bawahkanan{
+      color: white;
+      font-family: 'Calibri';
+      font-size: 11px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      text-align: center;
+      padding-right: 50px;
+      padding-bottom: 0px;
+    }
+  
+    #whatsapp{
+      width: 35px;
+      height: 20px;
+      margin: 0px;
+    }
+  
+    #nomor{
+      margin-top: 5px;
+      color: white;
+      font-family: 'Albertus Nova';
+      font-size: 10px;
+    }
+  
+    #email2{
+      width: 20px;
+      height: 20px;
+      margin: 0px;
+    }
+  
+    #emailbawah{
+      color: white;
+      font-family: 'Albertus Nova';
+      font-size: 10px;
+    }
+  }

@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+body{
+  overflow-x: hidden;
+}
+  
+a{
+  text-decoration: none;
+  color: white;
+}
+#container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo{
+  background-image:url(../Logo\ header.png);
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0px 30px;
+}
+
+#logo:hover{
+  background-image: url("../logo\ header\ hover.png");
+}
+
+#header_right, #header_left{
+  display: flex;
+  flex-direction: row;
+}
+
+.merch{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 25px 30px;
+  font-family:'Albertus Nova';
+  font-weight: normal;
+}
+#game {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 25px 30px;
+  font-family:'Albertus Nova';
+  font-weight: normal;
+  padding-left: -20px;
+  padding-right: 5px;
+}
+
+.merch:after{
+  bottom: -15px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: relative;
+  background:#ff4655 ;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.merch:hover:after { 
+width: 100%; 
+left: 0; 
+}
+
+#game:after{
+  bottom: -15px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: relative;
+  background:#ff4655 ;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+#game:hover:after { 
+width: 100%; 
+left: 0; 
+}
+  
+#gabut{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+#gabutdropdown{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 7.5vw;
+  height: 10vh;
+}
+
+#gabutdown{
+  background-color: black;
+  display: none;
+  min-width: 80px;
+  top: 52px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+  z-index: 1;
+  overflow-x: auto;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.menu-dropdown-item{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  width: 6vw;
+  background-color: black;
+  padding: 12px 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Albertus Nova';
+}
+
+.menu-dropdown-item:hover{
+  background-color:grey;
+  opacity: 75%;
+  color: white;
+}
+
+#gabutdropdown:hover #gabutdown{
+  display: block;
+  animation: dropdown 200ms ease-in-out;
+  transform-origin: top center;
+}
+
+
+#petik{
+  font-size: 50px;
+  color: white;
+  margin-top: 23px;
+  margin-left: -25px;
+}
+
+#header_background{
+  background-color: black;
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+}
+
+  hr{
+    width: 0.1px;
+  }
+
+  #content{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #title{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45pt;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .mercha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../gambar/gambarMerchandise/Rounded_Rectangle_3.png");
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+  }
+
+  img{
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .NB{
+    margin-top: 30px;
+    font-size: 20px;
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-end;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    margin-left: 10px;
+  }
+
+  .HB{
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    margin-right: 10px;
+  }
+
+  #row1, #row2, #row3{
+    margin-bottom: 30px;
+  }
+
+  #footerbawah{
+    display:flex;
+    flex-direction: row;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  
+  #bawahkiri{
+    color: white;
+    font-family: 'Arial';
+    font-size: 20px;
+  }
+  
+  #bawahkanan{
+    color: white;
+    font-family: 'Calibri';
+    font-size: 50px;
+    margin-left: 50px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #whatsapp{
+    width: 90px;
+    height: 60px;
+    margin-top:5px ;
+    margin-left: 30px;
+  }
+  
+  #nomor{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Albertus Nova';
+    font-size: 30px;
+  }
+  
+  #email2{
+    width: 60px;
+    height: 60px;
+    margin-top:5px ;
+    margin-left: 35px;
+    margin-right: 10px;
+  }
+  #emailbawah{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Albertus Nova';
+    font-size: 30px;
+  }
+
+
+@media only screen and (max-width: 800px){
+  #container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #logo{
+    background-image:url(../Logo\ header.png);
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px 10px;
+  }
+  
+  #logo:hover{
+    background-image: url("../logo\ header\ hover.png");
+  }
+  
+  #header_right, #header_left{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .merch{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 10px 25px;
+    font-family:'Albertus Nova';
+    font-weight: normal;
+  }
+  #game {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 10px 15px;
+    font-family:'Albertus Nova';
+    font-weight: normal;
+    padding-left: -20px;
+    padding-right: 20px;
+  }
+  
+  .merch:after{
+    bottom: -15px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: relative;
+    background:#ff4655 ;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .merch:hover:after { 
+  width: 100%; 
+  left: 0; 
+  }
+  
+  #game:after{
+    bottom: -15px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: relative;
+    background:#ff4655 ;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  #game:hover:after { 
+  width: 100%; 
+  left: 0; 
+  }
+  
+  #gabut{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  
+  #gabutdropdown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 7.5vw;
+    height: 10vh;
+  }
+  
+  #gabutdown{
+    background-color: black;
+    display: none;
+    min-width: 80px;
+    top: 52px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+    z-index: 1;
+    overflow-x: auto;
+    position: absolute;
+    margin-top: 20px;
+  }
+  
+  .menu-dropdown-item{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 6vw;
+    background-color: black;
+    padding: 12px 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Albertus Nova';
+  }
+  
+  .menu-dropdown-item:hover{
+    background-color:grey;
+    opacity: 75%;
+    color: white;
+  }
+  
+  #gabutdropdown:hover #gabutdown{
+    display: block;
+    animation: dropdown 200ms ease-in-out;
+    transform-origin: top center;
+  }
+  
+  
+  #petik{
+    font-size: 1px;
+    color: white;
+  }
+  
+  #header_background{
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+  }
+  
+    hr{
+      width: 0.1px;
+    }
+  
+    #content{
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  
+    #title{
+      color: white;
+      display: flex;
+      justify-content: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18pt;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mercha{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url("../gambar/gambarMerchandise/Rounded_Rectangle_3.png");
+      border-radius: 10px;
+      width: 175px;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+  
+    img{
+      margin-top: 30px;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .NB{
+      margin-top: 30px;
+      font-size: 8px;
+      display: flex;
+      align-self: flex-start;
+      align-items: flex-end;
+      font-family: 'Courier New', Courier, monospace;
+      color: black;
+      margin-left: 10px;
+    }
+  
+    .HB{
+      margin-top: 20px;
+      font-size: 8px;
+      display: flex;
+      align-self: flex-end;
+      align-items: flex-end;
+      font-family: 'Courier New', Courier, monospace;
+      color: black;
+      margin-right: 10px;
+    }
+  
+    #row1, #row2, #row3{
+      margin-bottom: 30px;
+    }
+  
+    #footerbawah{
+      display:flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+    
+    #bawahkiri{
+      color: white;
+      font-family: 'Arial';
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-left: -60px;
+    }
+    
+    #bawahkanan{
+      color: white;
+      font-family: 'Calibri';
+      font-size: 15px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding-right: 120px;
+    }
+    
+    #whatsapp{
+      width: 45px;
+      height: 30px;
+      padding-left: 20px;
+    }
+    
+    #nomor{
+      margin-top: 10px;
+      color: white;
+      font-family: 'Albertus Nova';
+      font-size: 15px;
+    }
+    
+    #email2{
+      width: 30px;
+      height: 30px;
+      padding-left: 20px;
+    }
+    #emailbawah{
+      margin-top: 10px;
+      color: white;
+      font-family: 'Albertus Nova';
+      font-size: 15px;
+    }
+}
