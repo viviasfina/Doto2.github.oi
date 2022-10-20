@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Leaves And Ground';
-  src: url('../VS Code/leave\ and\ ground\ woff/LeavesAndGround.woff2') format('woff2'),
-      url('../VS Code/Tw\ Cen\ Mt\ Consended\ woff/LeavesAndGround.woff') format('woff');
+  src: url('./leave\ and\ ground\ woff/LeavesAndGround.woff2') format('woff2'),
+      url('./Tw\ Cen\ Mt\ Consended\ woff/LeavesAndGround.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,7 +27,7 @@ body{
 }
 
 #upper{
-  background-image: url("../gambar/4HtdFjn\ -\ Copy.jpg");
+  background-image: url("./gambar/4HtdFjn\ -\ Copy.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -42,7 +42,7 @@ body{
 }
 
 #logo{
-  background-image:url(../Logo\ header.png);
+  background-image:url(./Logo\ header.png);
   width: 150px;
   height: 150px;
   background-size: contain;
@@ -51,7 +51,7 @@ body{
 }
 
 #logo:hover{
-  background-image: url("../logo\ header\ hover.png");
+  background-image: url("./logo\ header\ hover.png");
 }
 
 #header_right, #header_left{
@@ -219,7 +219,7 @@ form{
 #button{
   border: none;
   background: none;
-  background-image: url(../gambar/Kotak\ Tombol\ PFN.png);
+  background-image: url(./gambar/Kotak\ Tombol\ PFN.png);
   display:flex;
   font-size: 200px;
   width: 200px;
@@ -295,7 +295,7 @@ form{
 
 @media only screen and (max-width: 800px){
   #upper{
-    background-image: url("../gambar/4HtdFjn\ -\ Copy.jpg");
+    background-image: url("./gambar/4HtdFjn\ -\ Copy.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -312,7 +312,7 @@ form{
   }
 
   #logo{
-    background-image:url(../Logo\ header.png);
+    background-image:url(./Logo\ header.png);
     width: 100px;
     height: 100px;
     background-size: contain;
@@ -323,7 +323,7 @@ form{
   }
 
   #logo:hover{
-    background-image: url("../logo\ header\ hover.png");
+    background-image: url("./logo\ header\ hover.png");
   }
 
   #header_right, #header_left{
@@ -483,7 +483,7 @@ form{
   #button{
     border: none;
     background: none;
-    background-image: url(../gambar/Kotak\ Tombol\ PFN.png);
+    background-image: url(./gambar/Kotak\ Tombol\ PFN.png);
     display:flex;
     font-size: 200px;
     width: 200px;
